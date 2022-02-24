@@ -78,9 +78,9 @@ s = input('Enter the hashtag: ')
 
 api = tweepy.API(auth,wait_on_rate_limit=True)
 csvFile2 = open('C:/Users/Samyak Aggarwal/Desktop/Data/infected_'+s+'.csv', 'a')
-csvWriter2 = csv.writer(csvFile2)
+csvWriter2 = csv.writer(csvFile2, quoting=csv.QUOTE_ALL)
 csvFile = open('C:/Users/Samyak Aggarwal/Desktop/Data/stats_'+s+'.csv', 'a')
-csvWriter = csv.writer(csvFile)
+csvWriter = csv.writer(csvFile, quoting=csv.QUOTE_ALL)
 
 
 infected = []
